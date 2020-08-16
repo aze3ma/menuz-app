@@ -1,13 +1,59 @@
+* {
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f1efe8;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+textarea {
+    resize: none;
+}
+
+.ui.items > .item > .content > .header.menu-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ui.checkbox .box:before,
+.ui.checkbox label:before,
+.ui.basic.red.label,
+.ui.form input,
+textarea {
+    background-color: #f1efe8 !important;
+}
+.ui.segment,
+.ui.styled.accordion {
+    background-color: #e5dfd0;
+}
+
+.ui.accordion .accordion .active.content,
+.ui.accordion .active.content {
+    max-height: 400px;
+    overflow: auto;
+}
+.accordion .ui.form {
+    width: 100%;
+}
+.accordion .item .ui.form .header.menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
 }
